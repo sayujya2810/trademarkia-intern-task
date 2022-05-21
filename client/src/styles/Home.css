@@ -1,0 +1,63 @@
+#home-head{
+    font-size: 54px;
+    font-weight: 700;
+    font-family: 'Prompt';
+    color: #7161C5;
+    /* padding-top: 2rem; */
+    padding-left: 6rem;
+}
+
+#inv-img{
+    position: absolute;
+    right: 200px;
+    top: 100px;
+    height: 600px;
+}
+
+#home-container{
+    padding-bottom: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+#creator-container{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin-left: 6rem;
+}
+
+#invoice-create{
+    padding: 1.5rem;
+    width: 60%;
+    border-radius: 15px;
+    border: black .75px solid;
+    font-size: 20px;
+}
+
+#invoice-create-btn{
+    padding: 1.5rem 2rem;
+    background-color: #7161C5;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+#saved-invoices{
+    width: 50%;
+    /* background-color: #7161C5; */
+    padding-left: 6rem;
+    font-size: 15px;
+}
+
+.invoice-card{
+    border: black 0.60px solid;
+    border-radius: 15px;
+    padding: 1rem 3rem;
+    width: 50%;
+}
+
+.invoice-card-head{
+    font-size: 20px;
+    font-weight: 600;
+}
