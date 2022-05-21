@@ -5,7 +5,7 @@ import "../styles/Home.css"
 const Home = () => {
   return (
     <div>
-        <HomeNav />
+        <HomeNav height={30}  padding_t={3} padding_l={6} padding_r={0} padding_b={0}/>
         <div id='home-container'>
             <h1 id='home-head'>Invoice Generator</h1>
             <div id='creator-container'>
