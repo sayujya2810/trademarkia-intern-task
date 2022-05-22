@@ -1,0 +1,42 @@
+#invoice-navigation{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 6rem;
+}
+
+#invoice-name{
+    padding: 1rem 2rem 1rem 0px;
+    width: 100%;
+    text-align: left;
+    font-size: 15px;
+    font-family: 'Prompt';
+    border: none;
+    font-weight: 600;
+    font-size: 17px;
+    border-radius: 15px;
+}
+
+#preview-invoice , #edit-invoice{
+    border: none;
+    background-color: white;
+    margin: 1rem;
+    font-size: 17px;
+}
+
+#preview-invoice:hover, #edit-invoice:hover{
+    color: #7161C5;
+    cursor: pointer;
+}
+
+#export-invoice ,#save-invoice{
+    background-color: #EDEAFF;
+    color: #7161C5;
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#export-invoice{
+    margin-right: 20px;
+}
