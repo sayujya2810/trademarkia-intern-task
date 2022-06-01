@@ -1,0 +1,54 @@
+*{
+    font-family: 'Prompt';
+}
+
+#bill-container{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 6rem;
+    padding-left: 6rem;
+}
+
+.inner-container{
+    padding: 1rem;
+    width: 50%;
+}
+
+.inner-container:nth-child(1) {
+    width: 50%;
+    /* background-color: green; */
+}
+.inner-container:nth-child(1) input{
+    padding: 1rem;
+    width: 70%;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.inner-container:nth-child(2){
+    text-align: right;
+    width: 50%;
+    /* background-color: yellow; */
+}
+
+#totalAmount{
+    color: #7161C5;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+#paymentDate{
+    padding-top: .5rem;
+}
+
+
+#transaction-name:focus{
+    border: 2px solid black;
+    transition: ease-in-out, width .35s ease-in-out;
+    outline: none;
+    /* background-color: aqua; */
+}
+
+input:focus{
+    outline: none;
+}

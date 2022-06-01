@@ -28,15 +28,20 @@
     cursor: pointer;
 }
 
-#export-invoice ,#save-invoice{
+#export-invoice ,#save-invoice, #save-changes{
     background-color: #EDEAFF;
     color: #7161C5;
     border: none;
     padding: 1rem;
     border-radius: 5px;
     cursor: pointer;
+    font-weight: 600;
 }
 
-#export-invoice{
+#export-invoice, #save-changes{
     margin-right: 20px;
+}
+
+.active-btn{
+    
 }
