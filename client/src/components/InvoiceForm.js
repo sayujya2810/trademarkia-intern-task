@@ -4,7 +4,9 @@ import "../styles/InvoiceForm.css"
 
 const InvoiceForm = ({
     formParams,
-    setFormParams
+    setFormParams,
+    list,
+    setList
 }) => {
 
     const [items, setItems] = useState([])
@@ -17,22 +19,20 @@ const InvoiceForm = ({
 
 
     const handleSubmit = (e) => {
-    e.preventDefault()
+        e.preventDefault()
 
-    const newItems = {
-        formParams
+        const newItems = formParams
+
+        setFormParams.setId("")
+        setFormParams.setPrice(0.0)
+        setFormParams.setQty(0)
+        setFormParams.setTitle("")
+        setFormParams.setLineTotal(0)
+        setList([...list, newItems])
+
+        console.log("formParams.list : ", list)
+
     }
-
-    setFormParams.setId("")
-    setFormParams.setPrice(0.0)
-    setFormParams.setQty(0)
-    setFormParams.setTitle("")
-    setFormParams.setLineTotal(0)
-    setFormParams.setList([...formParams.list, newItems])
-
-    console.log("formParams.list : ", formParams.list)
-
-}
 
     // when qty and price changes we set the state of lineTotal = qty * price
     useEffect(() => {

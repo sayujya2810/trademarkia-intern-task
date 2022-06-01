@@ -29,7 +29,6 @@ const formParams = {
     title,
     price,
     lineTotal,
-    list
 }
 
 const setFormParams = {
@@ -38,7 +37,6 @@ const setFormParams = {
     setPrice,
     setLineTotal,
     setTitle,
-    setList
 }
 
 
@@ -77,7 +75,7 @@ const toggleToPreviewMode = () => {
                 </div>
             </div>
             <hr style={{ border: "0", borderTop: ".01px solid #d1d1d1", borderBottom: "0px dashed #fff"}} />
-            <InvoiceForm formParams={formParams} setFormParams={setFormParams} />
+            <InvoiceForm formParams={formParams} setFormParams={setFormParams} list={list} setList={setList} />
             {/* <InvoiceForm qty={qty} setQty={setQty} title={title} setTitle={setTitle} price={price} setPrice={setPrice} lineTotal={lineTotal} setLineTotal={setLineTotal} /> */}
         </>
 
@@ -101,7 +99,7 @@ const toggleToPreviewMode = () => {
                 </div>
             </div>
             <hr style={{ border: "0", borderTop: ".01px solid #d1d1d1", borderBottom: "0px dashed #fff"}} />
-            <PreviewForm formParams={formParams} />
+            <PreviewForm formParams={formParams} list={list} />
             
         </>
         }
